@@ -1,0 +1,7 @@
+metadata:
+  name: "test"
+  namespace: "test"
+  labels:
+    app: "test"
+    env: "test"
+    version: "test"
