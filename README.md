@@ -66,10 +66,15 @@ Jenkins, Nexus & Sonarqube
 
 ​# 🔍 Detailed Workflow Breakdown
 ​Commit & Trigger: Developers commit code to Source Code Management (SCM), which automatically Triggers a build. \
+
 ​Initial Fetch & Build: The pipeline FETCHes the code, the build process compiles the code and sends Outcome Notifications to Slack/Teams. \
+
 ​Unit Testing: Runs automated tests to validate core functionality. \
+
 ​Code Analysis: The CODE ANALYSIS engine performs static analysis and security checks. \
+
 ​Quality Gates: Both Unit Test and Code Analysis results are fed into the QUALITY GATES. Only code that meets predefined quality metrics are allowed to proceed. \
+
 ​Packaging & Storage: ​Successful code moves to VERSION ARTIFACT/PACKAGING where the application is packaged and a unique version tag is applied.​The package is uploaded via UPLOAD ARTIFACT to the ARTIFACT REPOSITORY for secure, version-controlled storage.
 ​Deployment Readiness & Notification: The artifact is now ready for deployment (which is the next phase). The entire team receives a final NOTIFICATION of a successful artifact creation and availability via slack.
 
